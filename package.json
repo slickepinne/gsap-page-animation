@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build index.html",
+    "predeploy": "rm -rf dist && parcel build index.html",
+    "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://slickepinne.github.io/gsap-page-animation",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -15,6 +19,7 @@
     "parcel-bundler": "^1.12.4"
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "sass": "^1.23.7"
   }
 }
