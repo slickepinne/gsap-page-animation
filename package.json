@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build index.html",
-    "predeploy": "rm -rf dist && parcel build index.html",
-    "deploy": "gh-pages -d dist"
+    "build": "parcel build index.html --out-dir docs --public-url ./",
+    "deploy": "npm run build && git add . && git commit -a -m 'latest build' && git push origin master"
   },
   "homepage": "https://slickepinne.github.io/gsap-page-animation",
   "keywords": [],
