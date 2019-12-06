@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link href="https://fonts.googleapis.com/css?family=Literata|Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.scss">
+  </head>
+  <body>
+
+    <nav>
+      <ul class="nav__list">
+        <li><a class="nav__links" href="./index.html">HOME</a></li>
+        <li><a class="nav__links" href="./about.html">ABOUT</a></li>
+        <li><a class="nav__links" href="./contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <main data-router-wrapper>
+      <section data-router-view="about" class="about">
+        <div class="about__content">
+          <div class="about__presentation">
+            <h1>That's us</h1>
+            <p>Awesome friendly teammates</p>
+          </div>
+          <img src="./images/team.svg" alt="about team illustration">
+        </div>
+      </section>
+    </main>
+
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>
